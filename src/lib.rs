@@ -145,10 +145,8 @@ mod dim3;
 mod math_ext;
 
 #[cfg(feature = "2d")]
-pub use dim2::{ComputeMassProperties2d, MassProperties2d};
+pub use dim2::*;
 #[cfg(feature = "3d")]
-pub use dim3::{
-    AngularInertiaTensor, AngularInertiaTensorError, ComputeMassProperties3d, MassProperties3d,
-};
+pub use dim3::*;
 pub use glam_matrix_extras::{Mat3Ext, MatConversionError, SquareMatExt, SymmetricMat3};
 pub use math_ext::RecipOrZero;

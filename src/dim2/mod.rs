@@ -9,6 +9,8 @@ use crate::RecipOrZero;
 /// [`ComputeMassProperties2d`] implementations for 2D geometric primitives.
 mod impls;
 
+pub use impls::*;
+
 /// A trait for computing [`MassProperties2d`] for 2D objects.
 ///
 /// For the 3D equivalent, see [`ComputeMassProperties3d`](crate::ComputeMassProperties3d).
